@@ -1,3 +1,5 @@
+package programms;
+
 class Solution {
     
     public boolean isHappy(int n) {
@@ -13,6 +15,7 @@ class Solution {
         if (n == 1) return true;
         int slow = n;
         int fast = n;
+
         while (true) {
             fast = getNext(getNext(fast));
             slow = getNext(slow);
